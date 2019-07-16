@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.example.bollywoodtopten">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".musicPlayerActivity"
+            android:label="Music Player"
+            android:parentActivityName="android.example.bollywoodtopten.MainActivity"/>
+        <activity android:name=".songs2019"
+            android:label="Top 10 (2019)"
+            android:parentActivityName="android.example.bollywoodtopten.MainActivity"/>
+        <activity android:name=".songs2018"
+            android:label="Top 10 (2018)"
+            android:parentActivityName="android.example.bollywoodtopten.MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
